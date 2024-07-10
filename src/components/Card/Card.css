@@ -1,0 +1,16 @@
+.card {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    height: 260px;
+    position: relative;
+}
+
+[glow] .card {
+    border-color: var(--glow-color);
+}
+
+p {
+    color: #c5c8d0;
+}
+
