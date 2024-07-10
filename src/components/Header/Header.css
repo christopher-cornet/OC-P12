@@ -1,0 +1,41 @@
+header {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        margin: 0;
+        font-weight: bold;
+        font-size: 20px;
+        display: inline;
+    }
+
+    a, a:visited {
+        text-decoration: none;
+        color: #c5c8d0;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 10px;
+
+        a {
+            background-color: transparent;
+            padding: 5px;
+            padding-bottom: 3px;
+            border: 1px solid #77797e;
+            border-radius: 6px;
+            cursor: pointer;
+            svg {
+                height: 20px;
+                width: 20px;
+            }
+        }
+        
+        a:hover {
+            background-color: #5e6064;
+        }
+    }
+}
+
