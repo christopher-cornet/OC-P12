@@ -3,8 +3,8 @@ body {
   background-color: #16161d;
 }
 
-h1, h2, p {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h1, h2, h3, p {
+  font-family: 'Segoe UI';
 }
 
 ::-webkit-scrollbar {
@@ -16,10 +16,10 @@ h1, h2, p {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffee6b;
+  background: #88a0eb;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffee6bd7;
+  background: #7186c5;
 }

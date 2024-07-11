@@ -7,6 +7,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhp, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
 // import ContactCard from './components/ContactCard/ContactCard';
 // import reactsvg from "../src/assets/react.svg"
+import projet11 from "../src/assets/projet11.png";
+import projet10 from "../src/assets/projet10.png";
+import projet8 from "../src/assets/projet8.png";
+import projet6 from "../src/assets/projet6.png";
+import projet5 from "../src/assets/projet5.png";
+import projet4 from "../src/assets/projet4.png";
 
 function App() {
   return (
@@ -24,14 +30,14 @@ function App() {
       {/* Partie Projets */}
       <main>
         <GlowCapture>
-          <Glow color='hsl(53, 100%, 71%)'>
+          <Glow color='hsl(225, 71%, 73%)'>
             <div className="projects">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+              <Card projectPath={projet11} title="Argent Bank" repository="https://github.com/christopher-cornet/OC-P11" website="" />
+              <Card projectPath={projet10} title="724 Events" repository="https://github.com/christopher-cornet/OC-P10" website="" />
+              <Card projectPath={projet8} title="Kasa" repository="https://github.com/christopher-cornet/oc-kasa" website="" />
+              <Card projectPath={projet6} title="Portfolio d'architecte" repository="https://github.com/christopher-cornet/oc-portfolio-architecte" website="" />
+              <Card projectPath={projet5} title="Print-it" repository="https://github.com/christopher-cornet/print-it" website="https://christopher-cornet.github.io/print-it/" />
+              <Card projectPath={projet4} title="Oh My Food" repository="https://github.com/christopher-cornet/ohmyfood" website="https://christopher-cornet.github.io/ohmyfood/" />
             </div>
           </Glow>
         </GlowCapture>
