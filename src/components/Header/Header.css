@@ -9,11 +9,12 @@ header {
         font-weight: bold;
         font-size: 20px;
         display: inline;
+        color: #aab1d3;
     }
 
     a, a:visited {
         text-decoration: none;
-        color: #c5c8d0;
+        color: #aab1d3;
     }
 
     .social-links {

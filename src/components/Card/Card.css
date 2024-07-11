@@ -1,12 +1,19 @@
 .card {
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.01);
+    /* background-color: rgba(255, 255, 255, 0.02); */
+    background-color: #1a1b25;
+    /* border: 1px solid rgba(255, 255, 255, 0.01); */
+    border: 1px solid #2d2f38;
     height: 260px;
     position: relative;
 }
 
+/* .card:hover {
+    background-color: rgba(255, 255, 255, 0.027);
+} */
+
 [glow] .card {
+    background-color: rgba(255, 255, 255, 0.03);
     border-color: var(--glow-color);
 }
 

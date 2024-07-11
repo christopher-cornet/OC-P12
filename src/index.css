@@ -1,4 +1,25 @@
 body {
   margin: 0 20%;
-  background-color: #20242a;
+  background-color: #16161d;
+}
+
+h1, h2, p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #16161d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffee6b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffee6bd7;
 }
