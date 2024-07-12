@@ -5,7 +5,7 @@ import Card from './components/Card/Card';
 import { Glow, GlowCapture } from '@codaworks/react-glow';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhp, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
-// import ContactCard from './components/ContactCard/ContactCard';
+import ContactCard from './components/ContactCard/ContactCard';
 // import reactsvg from "../src/assets/react.svg"
 import projet11 from "../src/assets/projet11.png";
 import projet10 from "../src/assets/projet10.png";
@@ -14,6 +14,9 @@ import projet6 from "../src/assets/projet6.png";
 import projet5 from "../src/assets/projet5.png";
 import projet4 from "../src/assets/projet4.png";
 import profilePicture from "../src/assets/profilePicture.jpeg";
+import linkedin from "../src/assets/linkedinProfilePicture.png";
+import github from "../src/assets/githubProfilePicture.png";
+import gmail from "../src/assets/gmailProfilePicture.png";
 
 function App() {
   return (
@@ -71,8 +74,9 @@ function App() {
           <p className="title">Contact me</p>
           <h2>I will be happy to work with you.</h2>
           <section className="container_contact-cards">
-            {/* <ContactCard logo={reactsvg} alt="" name="" followers="" />
-            <ContactCard logo={reactsvg} alt="" name="" followers="" /> */}
+            <ContactCard logo={linkedin} alt="" name="" followers="" />
+            <ContactCard logo={github} alt="" name="" followers="" />
+            <ContactCard logo={gmail} alt="" name="" followers="" />
             {/* LinkedIn */}
             {/* Gmail */}
           </section>

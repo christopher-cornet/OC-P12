@@ -1,4 +1,7 @@
 .contact-card {
     background-color: #1a1b25;
-    
+
+    img {
+        height: 100px;
+    }
 }
