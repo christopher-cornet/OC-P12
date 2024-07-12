@@ -17,6 +17,10 @@ function Header() {
                 <a href="https://www.linkedin.com/in/christopher-cornet/" target="_blank">
                     <FontAwesomeIcon icon={faLinkedin} style={{color: "#c5c8d0"}} />
                 </a>
+                {/* 
+                Drapeau de la langue actuelle du site (pouvoir la changer) +
+                Afficher la langue en fonction du navigateur de l'utilisateur
+                */}
             </div>
         </header>
     )

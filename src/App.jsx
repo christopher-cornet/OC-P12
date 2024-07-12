@@ -13,19 +13,21 @@ import projet8 from "../src/assets/projet8.png";
 import projet6 from "../src/assets/projet6.png";
 import projet5 from "../src/assets/projet5.png";
 import projet4 from "../src/assets/projet4.png";
+import profilePicture from "../src/assets/profilePicture.jpeg";
 
 function App() {
   return (
     <>
       <Header />
       <div className="top-part">
-        <h1 title="Christopher Cornet">Christopher Cornet</h1>
-        <h2>Front-End Developer</h2>
-        <p>I love creating and bringing things I have in mind to life with code.</p>
-        {/* 
-          Drapeau de la langue actuelle du site (pouvoir la changer) +
-          Afficher la langue en fonction du navigateur de l'utilisateur
-        */}
+        <section>
+          <h1 title="Christopher Cornet">Christopher Cornet</h1>
+          <h2>Front-End Developer</h2>
+          <p>I love creating and bringing things I have in mind to life with code.</p>
+        </section>
+        <section>
+          <img src={profilePicture} alt="" />
+        </section>
       </div>
       {/* Partie Projets */}
       <main>
