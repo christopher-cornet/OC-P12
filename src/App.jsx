@@ -73,13 +73,17 @@ function App() {
       <footer>
           <p className="title">Contact me</p>
           <h2>I will be happy to work with you.</h2>
-          <section className="container_contact-cards">
-            <ContactCard logo={linkedin} alt="" name="" followers="" />
-            <ContactCard logo={github} alt="" name="" followers="" />
-            <ContactCard logo={gmail} alt="" name="" followers="" />
-            {/* LinkedIn */}
-            {/* Gmail */}
-          </section>
+          <GlowCapture>
+            <Glow color='hsl(225, 71%, 73%)'>
+            <section className="container_contact-cards">
+              <ContactCard logo={linkedin} alt="" name="Christopher Cornet" description="+500" contactLink="https://www.linkedin.com/in/christopher-cornet/" />
+              <ContactCard logo={github} alt="" name="@christopher-cornet" description="3" contactLink="https://github.com/christopher-cornet" />
+              <ContactCard logo={gmail} alt="" name="tophercrnt@gmail.com" description="Email me for any inquiries." contactLink="mailto:tophercrnt@gmail.com" />
+              {/* LinkedIn */}
+              {/* Gmail */}
+            </section>
+            </Glow>
+          </GlowCapture>
         </footer>
     </>
   )

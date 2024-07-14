@@ -1,7 +1,30 @@
 .contact-card {
     background-color: #1a1b25;
+    flex: 1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #2d2f38;
+    padding-right: 20px;
+    justify-content: space-between;
 
     img {
-        height: 100px;
+        /* height: 100px; */
+        height: 80px;
+        width: 80px;
     }
+
+    .contactName {
+        margin-bottom: 0;
+    }
+
+    .contactDescription {
+        font-weight: normal;
+        margin-top: 0;
+    }
+}
+
+[glow] .contact-card {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-color: var(--glow-color);
 }
