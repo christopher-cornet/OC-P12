@@ -12,10 +12,10 @@ function Header() {
             </div>
             <div className="social-links">
                 <a href="https://github.com/christopher-cornet" target="_blank">
-                    <FontAwesomeIcon icon={faGithub} style={{color: "#c5c8d0"}} />
+                    <FontAwesomeIcon icon={faGithub} style={{color: "#0c0a09"}} />
                 </a>
                 <a href="https://www.linkedin.com/in/christopher-cornet/" target="_blank">
-                    <FontAwesomeIcon icon={faLinkedin} style={{color: "#c5c8d0"}} />
+                    <FontAwesomeIcon icon={faLinkedin} style={{color: "#0c0a09"}} />
                 </a>
                 {/* 
                 Drapeau de la langue actuelle du site (pouvoir la changer) +

@@ -1,6 +1,6 @@
 body {
   margin: 0 20%;
-  background-color: #16161d;
+  background-color: #101010;
 }
 
 h1, h2, h3, p {
@@ -12,14 +12,14 @@ h1, h2, h3, p {
 }
 
 ::-webkit-scrollbar-track {
-  background: #16161d;
+  background: #101010;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #88a0eb;
+  background: #facc15;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #7186c5;
+  background: #e2b814;
 }

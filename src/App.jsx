@@ -35,7 +35,7 @@ function App() {
       {/* Partie Projets */}
       <main>
         <GlowCapture>
-          <Glow color='hsl(225, 71%, 73%)'>
+          <Glow color='hsl(48, 96%, 53%)'>
             <div className="projects">
               <Card projectPath={projet11} title="Argent Bank" repository="https://github.com/christopher-cornet/OC-P11" website="" />
               <Card projectPath={projet10} title="724 Events" repository="https://github.com/christopher-cornet/OC-P10" website="" />
@@ -52,17 +52,17 @@ function App() {
           <h2>I love working on...</h2>
           <section className="technologies">
             <div>
-              <FontAwesomeIcon className="logo" color="#aab1d3" icon={faReact} />
+              <FontAwesomeIcon className="logo" color="#facc15" icon={faReact} />
               <h3>React</h3>
               <p>I primarily leverage <span>React</span> to design dynamic and interactive user interfaces for my applications.</p>
             </div>
             <div>
-              <FontAwesomeIcon className="logo" color="#aab1d3" icon={faPython} />
+              <FontAwesomeIcon className="logo" color="#facc15" icon={faPython} />
               <h3>Python</h3>
               <p>For backend development in both web and desktop environments, I harness the power of <span>Python</span>.</p>
             </div>
             <div>
-              <FontAwesomeIcon className="logo" color="#aab1d3" icon={faPhp} />
+              <FontAwesomeIcon className="logo" color="#facc15" icon={faPhp} />
               <h3>PHP</h3>
               <p>Additionally, I have utilized <span>PHP</span> and <span>mySQL</span> to build robust backends for my websites.</p>
             </div>
@@ -74,10 +74,10 @@ function App() {
           <p className="title">Contact me</p>
           <h2>I will be happy to work with you.</h2>
           <GlowCapture>
-            <Glow color='hsl(225, 71%, 73%)'>
+            <Glow color='hsl(48, 96%, 53%)'>
             <section className="container_contact-cards">
-              <ContactCard logo={linkedin} alt="" name="Christopher Cornet" description="+500" contactLink="https://www.linkedin.com/in/christopher-cornet/" />
-              <ContactCard logo={github} alt="" name="@christopher-cornet" description="3" contactLink="https://github.com/christopher-cornet" />
+              <ContactCard logo={linkedin} alt="" name="Christopher Cornet" description="+500 Connections" contactLink="https://www.linkedin.com/in/christopher-cornet/" />
+              <ContactCard logo={github} alt="" name="@christopher-cornet" description="3 Followers" contactLink="https://github.com/christopher-cornet" />
               <ContactCard logo={gmail} alt="" name="tophercrnt@gmail.com" description="Email me for any inquiries." contactLink="mailto:tophercrnt@gmail.com" />
               {/* LinkedIn */}
               {/* Gmail */}

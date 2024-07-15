@@ -9,12 +9,16 @@ header {
         font-weight: bold;
         font-size: 20px;
         display: inline;
-        color: #aab1d3;
+        color: #facc15;
+    }
+
+    p:hover {
+        color: #e2b814;
     }
 
     a, a:visited {
         text-decoration: none;
-        color: #aab1d3;
+        color: #facc15;
     }
 
     .social-links {
@@ -22,10 +26,9 @@ header {
         gap: 10px;
 
         a {
-            background-color: transparent;
             padding: 5px;
             padding-bottom: 3px;
-            border: 1px solid #77797e;
+            background-color: #facc15;
             border-radius: 6px;
             cursor: pointer;
             svg {
@@ -35,7 +38,7 @@ header {
         }
         
         a:hover {
-            background-color: #5e6064;
+            background-color: #e2b814;
         }
     }
 }
