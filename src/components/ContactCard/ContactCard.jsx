@@ -1,7 +1,6 @@
 import "./ContactCard.css";
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 function ContactCard({ logo, alt, name, description, contactLink }) {

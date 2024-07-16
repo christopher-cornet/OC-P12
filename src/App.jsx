@@ -1,4 +1,3 @@
-// import { useState } from 'react'
 import './App.css';
 import Header from './components/Header/Header';
 import Card from './components/Card/Card';
@@ -6,7 +5,6 @@ import { Glow, GlowCapture } from '@codaworks/react-glow';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhp, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
 import ContactCard from './components/ContactCard/ContactCard';
-// import reactsvg from "../src/assets/react.svg"
 import projet11 from "../src/assets/projet11.png";
 import projet10 from "../src/assets/projet10.png";
 import projet8 from "../src/assets/projet8.png";
@@ -32,8 +30,8 @@ function App() {
           <img src={profilePicture} alt="" />
         </section>
       </div>
-      {/* Partie Projets */}
       <main>
+        {/* Projects */}
         <GlowCapture>
           <Glow color='hsl(48, 96%, 53%)'>
             <div className="projects">
@@ -46,7 +44,7 @@ function App() {
             </div>
           </Glow>
         </GlowCapture>
-        {/* Partie Skills */}
+        {/* Skills */}
         <section className="skills">
           <p className="title">Skills</p>
           <h2>I love working on...</h2>
@@ -69,7 +67,7 @@ function App() {
           </section>
         </section>
       </main>
-      {/* Partie Contact */}
+      {/* Contact */}
       <footer>
           <p className="title">Contact me</p>
           <h2>I will be happy to work with you.</h2>
@@ -79,8 +77,6 @@ function App() {
               <ContactCard logo={linkedin} alt="" name="Christopher Cornet" description="+500 Connections" contactLink="https://www.linkedin.com/in/christopher-cornet/" />
               <ContactCard logo={github} alt="" name="@christopher-cornet" description="3 Followers" contactLink="https://github.com/christopher-cornet" />
               <ContactCard logo={gmail} alt="" name="tophercrnt@gmail.com" description="Email me for any inquiries." contactLink="mailto:tophercrnt@gmail.com" />
-              {/* LinkedIn */}
-              {/* Gmail */}
             </section>
             </Glow>
           </GlowCapture>
