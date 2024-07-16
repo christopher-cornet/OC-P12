@@ -11,12 +11,12 @@ function Card({ projectPath, title, repository, website, alt }) {
 			<img className="projectImg" src={projectPath} alt={alt} />
 			<p className="card_title">{title}</p>
 			<div className="card_icons">
-				<a href={repository} target="_blank">
+				<a href={repository} aria-label="Redirection to the repository of the project" target="_blank">
 					<FontAwesomeIcon className="card_icon github" icon={faGithub} style={{color: "#c5c8d0"}} />
 				</a>
 				{website ? (
-					<a href={website} target="_blank">
-						<FontAwesomeIcon className="card_icon" icon={faArrowUpRightFromSquare} style={{ color: "#c5c8d0" }} />
+					<a href={website} aria-label="Redirection to the live website of the project" target="_blank">
+						<FontAwesomeIcon className="card_icon arrow" icon={faArrowUpRightFromSquare} style={{ color: "#c5c8d0" }} />
 					</a>
 				) : null}
 			</div>

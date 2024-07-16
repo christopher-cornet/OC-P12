@@ -6,15 +6,15 @@ function Header() {
     return (
         <header>
             <div>
-                <a href="https://christopher-cornet.github.io/OC-P12/">
+                <a href="https://christopher-cornet.github.io/OC-P12/" aria-label="Redirect to the portfolio">
                     <p>christopher-cornet.github.io</p>
                 </a>
             </div>
             <div className="social-links">
-                <a href="https://github.com/christopher-cornet" target="_blank">
+                <a href="https://github.com/christopher-cornet" aria-label="Redirect to the Github profile" target="_blank">
                     <FontAwesomeIcon icon={faGithub} style={{color: "#0c0a09"}} />
                 </a>
-                <a href="https://www.linkedin.com/in/christopher-cornet/" target="_blank">
+                <a href="https://www.linkedin.com/in/christopher-cornet/" aria-label="Redirect to the LinkedIn profile" target="_blank">
                     <FontAwesomeIcon icon={faLinkedin} style={{color: "#0c0a09"}} />
                 </a>
                 {/* 

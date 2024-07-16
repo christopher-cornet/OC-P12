@@ -11,7 +11,7 @@ function ContactCard({ logo, alt, name, description, contactLink }) {
                 <p className="contactName">{name}</p>
                 <p className="contactDescription">{description}</p>
             </section>
-            <a href={contactLink} target="_blank">
+            <a href={contactLink} aria-label="Redirection to social network profile" target="_blank">
                 <FontAwesomeIcon className="card_icon" icon={faArrowUpRightFromSquare} style={{ color: "#c5c8d0" }} />
             </a>
         </div>

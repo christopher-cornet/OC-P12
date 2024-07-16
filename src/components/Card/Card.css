@@ -24,16 +24,23 @@
         display: flex;
         justify-content: center;
         gap: 15px;
+        align-items: center;
 
         .card_icon {
             height: 20px;
             width: 20px;
             cursor: pointer;
+            padding: 5px;
 
             &.github {
                 height: 22px;
                 width: 22px;
             }
+
+            /* &.arrow {
+                height: 22px;
+                width: 22px;
+            } */
         }
     }
 }
