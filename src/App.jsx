@@ -5,16 +5,11 @@ import { Glow, GlowCapture } from '@codaworks/react-glow';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhp, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
 import ContactCard from './components/ContactCard/ContactCard';
-import projet11 from "../src/assets/projet11.jpg";
-import projet10 from "../src/assets/projet10.jpg";
-import projet8 from "../src/assets/projet8.jpg";
-import projet6 from "../src/assets/projet6.jpg";
-import projet5 from "../src/assets/projet5.jpg";
-import projet4 from "../src/assets/projet4.jpg";
 import profilePicture from "../src/assets/profilePicture.jpg";
 import linkedin from "../src/assets/linkedinProfilePicture.png";
 import github from "../src/assets/githubProfilePicture.png";
 import gmail from "../src/assets/gmailProfilePicture.png";
+import projects from "./projects.json";
 
 function App() {
   return (
@@ -35,50 +30,18 @@ function App() {
         <GlowCapture>
           <Glow color='hsl(48, 96%, 53%)'>
             <div className="projects">
-              <Card
-                projectPath={projet11}
-                title="Argent Bank"
-                // description="I had to create the interface for a banking application with React.
-                // I also had to implement an authentication system with an API and implement Redux to manage application state."
-                repository="https://github.com/christopher-cornet/OC-P11"
-                website=""
-                alt="Projet 11 Argent Bank"
-              />
-              <Card
-                projectPath={projet10}
-                title="724 Events"
-                repository="https://github.com/christopher-cornet/OC-P10"
-                website=""
-                alt="Projet 10 724 Events"
-              />
-              <Card
-                projectPath={projet8}
-                title="Kasa"
-                repository="https://github.com/christopher-cornet/oc-kasa"
-                website=""
-                alt="Projet 8 Kasa"
-              />
-              <Card
-                projectPath={projet6}
-                title="Portfolio d'architecte"
-                repository="https://github.com/christopher-cornet/oc-portfolio-architecte"
-                website=""
-                alt="Projet Portfolio d'architecte"
-              />
-              <Card
-                projectPath={projet5}
-                title="Print-it"
-                repository="https://github.com/christopher-cornet/print-it"
-                website="https://christopher-cornet.github.io/print-it/"
-                alt="Projet Print It"
-              />
-              <Card
-                projectPath={projet4}
-                title="Oh My Food"
-                repository="https://github.com/christopher-cornet/ohmyfood"
-                website="https://christopher-cornet.github.io/ohmyfood/"
-                alt="Projet Oh My Food"
-              />
+              {projects.map((project, index) => {
+                return <Card
+                    key={index}
+                    projectPath={project.projectPath}
+                    title={project.title}
+                    // description="I had to create the interface for a banking application with React.
+                    // I also had to implement an authentication system with an API and implement Redux to manage application state."
+                    repository={project.repository}
+                    website={project.website}
+                    alt={project.alt}
+                  />
+                })}
             </div>
           </Glow>
         </GlowCapture>
