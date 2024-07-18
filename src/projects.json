@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "projectPath": "./src/assets/projet11.jpg",
         "title": "Argent Bank",
         "description": "",
@@ -8,6 +9,7 @@
         "alt": "Projet 11 Argent Bank"
     },
     {
+        "id": 2,
         "projectPath": "./src/assets/projet10.jpg",
         "title": "724 Events",
         "description": "",
@@ -16,6 +18,7 @@
         "alt": "Projet 10 724 Events"
     },
     {
+        "id": 3,
         "projectPath": "./src/assets/projet8.jpg",
         "title": "Kasa",
         "description": "",
@@ -24,6 +27,7 @@
         "alt": "Projet 8 Kasa"
     },
     {
+        "id": 4,
         "projectPath": "./src/assets/projet6.jpg",
         "title": "Portfolio d'architecte",
         "description": "",
@@ -32,6 +36,7 @@
         "alt": "Projet Portfolio d'architecte"
     },
     {
+        "id": 5,
         "projectPath": "./src/assets/projet5.jpg",
         "title": "Print It",
         "description": "",
@@ -40,6 +45,7 @@
         "alt": "Projet Print It"
     },
     {
+        "id": 6,
         "projectPath": "./src/assets/projet4.jpg",
         "title": "Oh My Food",
         "description": "",

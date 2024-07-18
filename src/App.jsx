@@ -30,9 +30,9 @@ function App() {
         <GlowCapture>
           <Glow color='hsl(48, 96%, 53%)'>
             <div className="projects">
-              {projects.map((project, index) => {
+              {projects.map((project) => {
                 return <Card
-                    key={index}
+                    key={project.id}
                     projectPath={project.projectPath}
                     title={project.title}
                     // description="I had to create the interface for a banking application with React.
