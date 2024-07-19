@@ -35,8 +35,10 @@ function App() {
                     key={project.id}
                     projectPath={project.projectPath}
                     title={project.title}
-                    // description="I had to create the interface for a banking application with React.
-                    // I also had to implement an authentication system with an API and implement Redux to manage application state."
+                    // description="I had to create the interface for a banking
+                    // application with React.
+                    // I also had to implement an authentication system with an API
+                    // and implement Redux to manage application state."
                     repository={project.repository}
                     website={project.website}
                     alt={project.alt}
@@ -53,17 +55,26 @@ function App() {
             <div>
               <FontAwesomeIcon className="logo" color="#facc15" icon={faReact} />
               <h3>React</h3>
-              <p>I primarily leverage <span>React</span> to design dynamic and interactive user interfaces for my applications.</p>
+              <p>
+                I primarily leverage <span>React</span> to design dynamic and
+                interactive user interfaces for my applications.
+              </p>
             </div>
             <div>
               <FontAwesomeIcon className="logo" color="#facc15" icon={faPython} />
               <h3>Python</h3>
-              <p>For backend development in both web and desktop environments, I harness the power of <span>Python</span>.</p>
+              <p>
+                For backend development in both web and desktop environments,
+                I harness the power of <span>Python</span>.
+              </p>
             </div>
             <div>
               <FontAwesomeIcon className="logo" color="#facc15" icon={faPhp} />
               <h3>PHP</h3>
-              <p>Additionally, I have utilized <span>PHP</span> and <span>mySQL</span> to build robust backends for my websites.</p>
+              <p>
+                Additionally, I have utilized <span>PHP</span> and
+                <span>mySQL</span> to build robust backends for my websites.
+              </p>
             </div>
           </section>
         </section>
@@ -75,9 +86,27 @@ function App() {
           <GlowCapture>
             <Glow color='hsl(48, 96%, 53%)'>
             <section className="container_contact-cards">
-              <ContactCard logo={linkedin} alt="Linkedin" name="Christopher Cornet" description="+500 Connections" contactLink="https://www.linkedin.com/in/christopher-cornet/" />
-              <ContactCard logo={github} alt="Github" name="@christopher-cornet" description="3 Followers" contactLink="https://github.com/christopher-cornet" />
-              <ContactCard logo={gmail} alt="Gmail" name="tophercrnt@gmail.com" description="Email me for any inquiries." contactLink="mailto:tophercrnt@gmail.com" />
+              <ContactCard 
+                logo={linkedin}
+                alt="Linkedin"
+                name="Christopher Cornet"
+                description="+500 Connections"
+                contactLink="https://www.linkedin.com/in/christopher-cornet/"
+              />
+              <ContactCard 
+                logo={github}
+                alt="Github"
+                name="@christopher-cornet"
+                description="3 Followers"
+                contactLink="https://github.com/christopher-cornet"
+              />
+              <ContactCard 
+                logo={gmail}
+                alt="Gmail"
+                name="tophercrnt@gmail.com"
+                description="Email me for any inquiries."
+                contactLink="mailto:tophercrnt@gmail.com"
+              />
             </section>
             </Glow>
           </GlowCapture>
