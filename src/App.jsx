@@ -17,6 +17,7 @@ function App() {
   return (
     <>
       <Header />
+
       <div className="top-part">
         <section>
           <h1 title="Christopher Cornet">Christopher Cornet</h1>
@@ -27,6 +28,7 @@ function App() {
           <img src={profilePicture} alt="Photo de profil de Christopher Cornet" />
         </section>
       </div>
+
       <main>
         {/* Projects */}
         {/* <GlowCapture> */}
@@ -49,13 +51,16 @@ function App() {
             </div>
           {/* </Glow> */}
         {/* </GlowCapture> */}
+
         {/* Skills */}
         <section className="skills">
           <p className="title">Skills</p>
           <h2>I love working on...</h2>
           <section className="technologies">
             <div>
-              <FontAwesomeIcon className="logo" color="#facc15" icon={faReact} />
+              <a href="https://react.dev/" target="_blank">
+                <FontAwesomeIcon className="logo" color="#9fd9fa" icon={faReact} />
+              </a>
               <h3>React</h3>
               <p>
                 I primarily leverage <span>React</span> to design dynamic and
@@ -63,7 +68,9 @@ function App() {
               </p>
             </div>
             <div>
-              <FontAwesomeIcon className="logo" color="#facc15" icon={faPython} />
+              <a href="https://www.python.org/" target="_blank">
+                <FontAwesomeIcon className="logo" color="#facc15" icon={faPython} />
+              </a>
               <h3>Python</h3>
               <p>
                 For backend development in both web and desktop environments,
@@ -71,7 +78,9 @@ function App() {
               </p>
             </div>
             <div>
-              <FontAwesomeIcon className="logo" color="#facc15" icon={faPhp} />
+              <a href="https://www.php.net/" target="_blank">
+                <FontAwesomeIcon className="logo" color="#8473c4" icon={faPhp} />
+              </a>
               <h3>PHP</h3>
               <p>
                 Additionally, I have utilized <span>PHP</span> and
@@ -80,29 +89,39 @@ function App() {
             </div>
           </section>
         </section>
+
+        {/* Education */}
         <section className="education">
           <p className="title">Education</p>
           <h2>My apprenticeship</h2>
           <section className="schools">
             <div>
-              <img src={openClassrooms} alt="OpenClassrooms" />
+              <a href="https://openclassrooms.com/" target="_blank">
+                <img src={openClassrooms} alt="OpenClassrooms" />
+              </a>
               <h3>OpenClassrooms</h3>
               <p>
-                I primarily leverage <span>React</span> to design dynamic and
-                interactive user interfaces for my applications.
+                I completed a training program in <span>Front-End</span>
+                development with JavaScript, React, and Redux. During this course,
+                I learned how to create user interfaces that communicate with the
+                back-end and manage web projects.
               </p>
             </div>
             <div>
-              <img src={odinProject} alt="The Odin Project" />
+              <a href="https://www.theodinproject.com/" target="_blank">
+                <img src={odinProject} alt="The Odin Project" />
+              </a>
               <h3>The Odin Project</h3>
               <p>
-                For backend development in both web and desktop environments,
-                I harness the power of <span>Python</span>.
+                I also took courses from The Odin Project to deepen my knowledge
+                of JavaScript and React. I plan to learn
+                <span>Express.js</span> to develop Full Stack applications with JavaScript.
               </p>
             </div>
           </section>
         </section>
       </main>
+
       {/* Contact */}
       <footer>
           <p className="title">Contact me</p>

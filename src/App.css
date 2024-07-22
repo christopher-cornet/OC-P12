@@ -99,12 +99,26 @@
 .schools {
   display: flex;
   align-items: center;
-  flex: 1;
   gap: 50px;
 
   img {
     height: 50px;
     width: 50px;
+  }
+
+  & > div {
+    flex: 1;
+  }
+
+  span {
+    display: inline;
+    padding: 5px;
+    padding-top: 0;
+    padding-bottom: 3px;
+    border: 1px solid #facc15;
+    border-radius: 6px;
+    background-color: #101010;
+    font-weight: bold;
   }
 }
 
@@ -148,7 +162,7 @@ footer {
     row-gap: 25px;
   }
 
-  .technologies {  
+  .technologies, .schools {  
     div {
       p {
         line-height: 28px;
