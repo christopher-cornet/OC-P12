@@ -9,6 +9,8 @@ import profilePicture from "../src/assets/profilePicture.jpg";
 import linkedin from "../src/assets/linkedinProfilePicture.png";
 import github from "../src/assets/githubProfilePicture.png";
 import gmail from "../src/assets/gmailProfilePicture.png";
+import openClassrooms from "./assets/openClassrooms.png";
+import odinProject from "./assets/odinProject.png";
 import projects from "./projects.json";
 
 function App() {
@@ -27,8 +29,8 @@ function App() {
       </div>
       <main>
         {/* Projects */}
-        <GlowCapture>
-          <Glow color='hsl(48, 96%, 53%)'>
+        {/* <GlowCapture> */}
+          {/* <Glow color='hsl(48, 96%, 53%)'> */}
             <div className="projects">
               {projects.map((project) => {
                 return <Card
@@ -45,8 +47,8 @@ function App() {
                   />
                 })}
             </div>
-          </Glow>
-        </GlowCapture>
+          {/* </Glow> */}
+        {/* </GlowCapture> */}
         {/* Skills */}
         <section className="skills">
           <p className="title">Skills</p>
@@ -74,6 +76,28 @@ function App() {
               <p>
                 Additionally, I have utilized <span>PHP</span> and
                 <span>mySQL</span> to build robust backends for my websites.
+              </p>
+            </div>
+          </section>
+        </section>
+        <section className="education">
+          <p className="title">Education</p>
+          <h2>My apprenticeship</h2>
+          <section className="schools">
+            <div>
+              <img src={openClassrooms} alt="OpenClassrooms" />
+              <h3>OpenClassrooms</h3>
+              <p>
+                I primarily leverage <span>React</span> to design dynamic and
+                interactive user interfaces for my applications.
+              </p>
+            </div>
+            <div>
+              <img src={odinProject} alt="The Odin Project" />
+              <h3>The Odin Project</h3>
+              <p>
+                For backend development in both web and desktop environments,
+                I harness the power of <span>Python</span>.
               </p>
             </div>
           </section>
