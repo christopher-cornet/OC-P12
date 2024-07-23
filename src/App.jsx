@@ -83,8 +83,8 @@ function App() {
               </a>
               <h3>PHP</h3>
               <p>
-                Additionally, I have utilized <span>PHP</span> and
-                <span>mySQL</span> to build robust backends for my websites.
+                Additionally, I have utilized <span>PHP</span> and <span>mySQL</span> to
+                build robust backends for my websites.
               </p>
             </div>
           </section>
@@ -101,10 +101,10 @@ function App() {
               </a>
               <h3>OpenClassrooms</h3>
               <p>
-                I completed a training program in <span>Front-End</span>
-                development with JavaScript, React, and Redux. During this course,
-                I learned how to create user interfaces that communicate with the
-                back-end and manage web projects.
+                I completed a training program in <span>Front-End</span> development
+                with JavaScript, React, and Redux. During this course, I learned 
+                how to create user interfaces that communicate with the back-end and 
+                manage web projects.
               </p>
             </div>
             <div>
@@ -114,8 +114,8 @@ function App() {
               <h3>The Odin Project</h3>
               <p>
                 I also took courses from The Odin Project to deepen my knowledge
-                of JavaScript and React. I plan to learn
-                <span>Express.js</span> to develop Full Stack applications with JavaScript.
+                of JavaScript and React. I plan to learn <span>Express.js</span> to
+                develop <span>Full Stack</span> applications with JavaScript.
               </p>
             </div>
           </section>
