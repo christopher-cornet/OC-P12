@@ -34,7 +34,7 @@ function App() {
 
       <div className="top-part">
         <section>
-          <h1 title="Christopher Cornet">Christopher Cornet</h1>
+          <h1>Christopher Cornet</h1>
           <h2>Front-End Developer</h2>
           <p>I love creating and bringing things I have in mind to life with code.</p>
         </section>
@@ -72,7 +72,7 @@ function App() {
           <h2>I love working on...</h2>
           <section className="technologies">
             <div>
-              <a href="https://react.dev/" target="_blank">
+              <a href="https://react.dev/" aria-label="React website" target="_blank">
                 <FontAwesomeIcon className="logo" color="#9fd9fa" icon={faReact} />
               </a>
               <h3>React</h3>
@@ -82,7 +82,7 @@ function App() {
               </p>
             </div>
             <div>
-              <a href="https://www.python.org/" target="_blank">
+              <a href="https://www.python.org/" aria-label="Python website" target="_blank">
                 <FontAwesomeIcon className="logo" color="#facc15" icon={faPython} />
               </a>
               <h3>Python</h3>
@@ -92,7 +92,7 @@ function App() {
               </p>
             </div>
             <div>
-              <a href="https://www.php.net/" target="_blank">
+              <a href="https://www.php.net/" aria-label="PHP website" target="_blank">
                 <FontAwesomeIcon className="logo" color="#8473c4" icon={faPhp} />
               </a>
               <h3>PHP</h3>

@@ -18,6 +18,7 @@
   
   img {
     height: 200px;
+    width: 200px;
     border-radius: 50%;
   }
 }
@@ -208,6 +209,7 @@ footer {
 
     img {
       height: 150px;
+      width: 150px;
     }
   }
 
@@ -242,6 +244,7 @@ footer {
   .top-part {
     img {
       height: 100px;
+      width: 100px;
     }
   }
 }
