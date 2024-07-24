@@ -8,12 +8,26 @@ import ContactCard from './components/ContactCard/ContactCard';
 import profilePicture from "../src/assets/profilePicture.jpg";
 import linkedin from "../src/assets/linkedinProfilePicture.png";
 import github from "../src/assets/githubProfilePicture.png";
-import gmail from "../src/assets/gmailProfilePicture.png";
+// import gmail from "../src/assets/gmailProfilePicture.png";
 import openClassrooms from "./assets/openClassrooms.png";
 import odinProject from "./assets/odinProject.png";
-import projects from "./projects.json";
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch('/OC-P12/projects.json')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => setProjects(data))
+      .catch((error) => console.error('Error fetching projects:', error));
+  }, []);
+
   return (
     <>
       <Header />
@@ -142,13 +156,6 @@ function App() {
                 name="@christopher-cornet"
                 description="3 Followers"
                 contactLink="https://github.com/christopher-cornet"
-              />
-              <ContactCard 
-                logo={gmail}
-                alt="Gmail"
-                name="tophercrnt@gmail.com"
-                description="Email me for any inquiries."
-                contactLink="mailto:tophercrnt@gmail.com"
               />
             </section>
             </Glow>
