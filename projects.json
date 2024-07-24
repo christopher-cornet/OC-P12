@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "projectPath": "./src/assets/projet11.jpg",
+        "title": "Argent Bank",
+        "description": "",
+        "repository": "https://github.com/christopher-cornet/OC-P11",
+        "website": "",
+        "alt": "Projet 11 Argent Bank"
+    },
+    {
+        "id": 2,
+        "projectPath": "./src/assets/projet10.jpg",
+        "title": "724 Events",
+        "description": "",
+        "repository": "https://github.com/christopher-cornet/OC-P10",
+        "website": "",
+        "alt": "Projet 10 724 Events"
+    },
+    {
+        "id": 3,
+        "projectPath": "./src/assets/projet8.jpg",
+        "title": "Kasa",
+        "description": "",
+        "repository": "https://github.com/christopher-cornet/oc-kasa",
+        "website": "",
+        "alt": "Projet 8 Kasa"
+    },
+    {
+        "id": 4,
+        "projectPath": "./src/assets/projet6.jpg",
+        "title": "Portfolio d'architecte",
+        "description": "",
+        "repository": "https://github.com/christopher-cornet/oc-portfolio-architecte",
+        "website": "",
+        "alt": "Projet Portfolio d'architecte"
+    },
+    {
+        "id": 5,
+        "projectPath": "./src/assets/projet5.jpg",
+        "title": "Print It",
+        "description": "",
+        "repository": "https://github.com/christopher-cornet/print-it",
+        "website": "https://christopher-cornet.github.io/print-it/",
+        "alt": "Projet Print It"
+    },
+    {
+        "id": 6,
+        "projectPath": "./src/assets/projet4.jpg",
+        "title": "Oh My Food",
+        "description": "",
+        "repository": "https://github.com/christopher-cornet/ohmyfood",
+        "website": "https://christopher-cornet.github.io/ohmyfood/",
+        "alt": "Projet Oh My Food"
+    }
+]
