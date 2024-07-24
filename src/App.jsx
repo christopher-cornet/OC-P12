@@ -8,7 +8,6 @@ import ContactCard from './components/ContactCard/ContactCard';
 import profilePicture from "../src/assets/profilePicture.jpg";
 import linkedin from "../src/assets/linkedinProfilePicture.png";
 import github from "../src/assets/githubProfilePicture.png";
-// import gmail from "../src/assets/gmailProfilePicture.png";
 import openClassrooms from "./assets/openClassrooms.png";
 import odinProject from "./assets/odinProject.png";
 import { useEffect, useState } from 'react';
@@ -45,26 +44,22 @@ function App() {
 
       <main>
         {/* Projects */}
-        {/* <GlowCapture> */}
-          {/* <Glow color='hsl(48, 96%, 53%)'> */}
-            <div className="projects">
-              {projects.map((project) => {
-                return <Card
-                    key={project.id}
-                    projectPath={project.projectPath}
-                    title={project.title}
-                    // description="I had to create the interface for a banking
-                    // application with React.
-                    // I also had to implement an authentication system with an API
-                    // and implement Redux to manage application state."
-                    repository={project.repository}
-                    website={project.website}
-                    alt={project.alt}
-                  />
-                })}
-            </div>
-          {/* </Glow> */}
-        {/* </GlowCapture> */}
+        <div className="projects">
+          {projects.map((project) => {
+            return <Card
+                key={project.id}
+                image={project.projectPath}
+                title={project.title}
+                // description="I had to create the interface for a banking
+                // application with React.
+                // I also had to implement an authentication system with an API
+                // and implement Redux to manage application state."
+                repository={project.repository}
+                website={project.website}
+                alt={project.alt}
+              />
+            })}
+        </div>
 
         {/* Skills */}
         <section className="skills">

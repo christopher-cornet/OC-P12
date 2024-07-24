@@ -29,3 +29,9 @@ h1, h2, h3, p {
     margin: 0 10%;
   }
 }
+
+@media screen and (max-width: 480px) {
+  body {
+    margin: 0 5%;
+  }
+}
