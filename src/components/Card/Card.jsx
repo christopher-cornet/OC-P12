@@ -4,11 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
-// Params : title, image, repository, website
-function Card({ image, title, repository, website, alt }) {
+function Card({ image, title, repository, website, alt, onImageClick }) {
     return (
         <section className="card">
-			<img className="projectImg" src={image} alt={alt} />
+			<img className="projectImg" src={image} alt={alt} onClick={onImageClick} />
 			<p className="card_title">{title}</p>
 			<div className="card_icons">
 				<a
@@ -45,7 +44,8 @@ Card.propTypes = {
     title: PropTypes.string.isRequired,
     repository: PropTypes.string.isRequired,
     website: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired
+    alt: PropTypes.string.isRequired,
+	onImageClick: PropTypes.func.isRequired
 };
 
 export default Card;

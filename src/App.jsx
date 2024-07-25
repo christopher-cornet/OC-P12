@@ -11,10 +11,12 @@ import github from "../src/assets/githubProfilePicture.png";
 import openClassrooms from "./assets/openClassrooms.png";
 import odinProject from "./assets/odinProject.png";
 import { useEffect, useState } from 'react';
+import Modal from "./components/Modal/Modal";
 
 function App() {
   const [projects, setProjects] = useState([]);
 
+  // Get the projects and stock the data in "projects" useState
   useEffect(() => {
     fetch('/OC-P12/projects.json')
       .then((response) => {
@@ -26,6 +28,19 @@ function App() {
       .then((data) => setProjects(data))
       .catch((error) => console.error('Error fetching projects:', error));
   }, []);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalProject, setModalProject] = useState({});
+
+  const handleImageClick = (project) => {
+    setModalProject(project);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalProject({});
+  };
 
   return (
     <>
@@ -57,8 +72,12 @@ function App() {
                 repository={project.repository}
                 website={project.website}
                 alt={project.alt}
+                onImageClick={() => handleImageClick(project)}
               />
             })}
+            {isModalOpen && (
+              <Modal project={modalProject} closeModal={closeModal} />
+            )}
         </div>
 
         {/* Skills */}

@@ -3,7 +3,7 @@
         "id": 1,
         "projectPath": "/OC-P12/projet11.jpg",
         "title": "Argent Bank",
-        "description": "",
+        "description": "I had to create the interface for a banking application with React. I also had to implement an authentication system with an API and implement Redux to manage application state.",
         "repository": "https://github.com/christopher-cornet/OC-P11",
         "website": "",
         "alt": "Projet 11 Argent Bank"
