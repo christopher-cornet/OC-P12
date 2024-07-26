@@ -5,9 +5,20 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 function Card({ image, title, repository, website, alt, onImageClick }) {
+	// No drag and drop of the images
+	const handleDragStart = (event) => {
+		event.preventDefault();
+	};
+	
     return (
         <section className="card">
-			<img className="projectImg" src={image} alt={alt} onClick={onImageClick} />
+			<img
+				className="projectImg"
+				src={image}
+				alt={alt}
+				onClick={onImageClick}
+				onDragStart={handleDragStart}
+			/>
 			<p className="card_title">{title}</p>
 			<div className="card_icons">
 				<a

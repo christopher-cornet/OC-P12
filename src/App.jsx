@@ -32,6 +32,19 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalProject, setModalProject] = useState({});
 
+  // Disable page scrolling for user if modal is open
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isModalOpen]);
+
   const handleImageClick = (project) => {
     setModalProject(project);
     setIsModalOpen(true);
@@ -49,7 +62,7 @@ function App() {
       <div className="top-part">
         <section>
           <h1>Christopher Cornet</h1>
-          <h2>Front-End Developer</h2>
+          <h2>Full Stack Developer</h2>
           <p>I love creating and bringing things I have in mind to life with code.</p>
         </section>
         <section>
@@ -65,10 +78,6 @@ function App() {
                 key={project.id}
                 image={project.projectPath}
                 title={project.title}
-                // description="I had to create the interface for a banking
-                // application with React.
-                // I also had to implement an authentication system with an API
-                // and implement Redux to manage application state."
                 repository={project.repository}
                 website={project.website}
                 alt={project.alt}
