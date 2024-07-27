@@ -1,6 +1,9 @@
 {
-    "React": "blue",
-    "Javascript": "yellow",
-    "Swagger": "green",
-    "Redux": "purple"
+    "React": "#9fd9fa",
+    "Javascript": "#f1e973",
+    "Swagger": "#90f173",
+    "Redux": "#8473c4",
+    "HTML": "#f18173",
+    "CSS": "#8ab3ff",
+    "SCSS": "#b993b1"
 }

@@ -31,10 +31,9 @@
     justify-content: space-between;
     align-items: center;
 
-    /* .modal-technologies p {
-        display: inline;
-        gap: 15px;
-    } */
+    .modal-technologies p {
+        font-weight: bold;
+    }
 }
 
 .modal-description {
@@ -52,7 +51,7 @@
 .modal-icons {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     margin-top: 10px;
 
     .github {

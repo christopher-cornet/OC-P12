@@ -7,7 +7,7 @@
         "repository": "https://github.com/christopher-cornet/OC-P11",
         "website": "",
         "alt": "Projet 11 Argent Bank",
-        "technologies": ["React", "Redux", "Swagger"]
+        "technologies": ["React", "CSS", "Redux", "Swagger"]
     },
     {
         "id": 2,
@@ -17,7 +17,7 @@
         "repository": "https://github.com/christopher-cornet/OC-P10",
         "website": "",
         "alt": "Projet 10 724 Events",
-        "technologies": ["React"]
+        "technologies": ["React", "SCSS"]
     },
     {
         "id": 3,
@@ -27,7 +27,7 @@
         "repository": "https://github.com/christopher-cornet/oc-kasa",
         "website": "",
         "alt": "Projet 8 Kasa",
-        "technologies": ["React"]
+        "technologies": ["React", "SCSS"]
     },
     {
         "id": 4,
@@ -37,7 +37,7 @@
         "repository": "https://github.com/christopher-cornet/oc-portfolio-architecte",
         "website": "",
         "alt": "Projet Portfolio d'architecte",
-        "technologies": ["Javascript", "Swagger"]
+        "technologies": ["HTML", "CSS", "Javascript", "Swagger"]
     },
     {
         "id": 5,
@@ -47,7 +47,7 @@
         "repository": "https://github.com/christopher-cornet/print-it",
         "website": "https://christopher-cornet.github.io/print-it/",
         "alt": "Projet Print It",
-        "technologies": ["Javascript"]
+        "technologies": ["HTML", "CSS", "Javascript"]
     },
     {
         "id": 6,
