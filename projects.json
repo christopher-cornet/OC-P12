@@ -3,46 +3,51 @@
         "id": 1,
         "projectPath": "/OC-P12/projet11.jpg",
         "title": "Argent Bank",
-        "description": "",
+        "description": "I had to create the interface for a banking application with React. I also had to implement an authentication system with an API and implement Redux to manage application state.",
         "repository": "https://github.com/christopher-cornet/OC-P11",
         "website": "",
-        "alt": "Projet 11 Argent Bank"
+        "alt": "Projet 11 Argent Bank",
+        "technologies": ["React", "CSS", "Redux", "Swagger"]
     },
     {
         "id": 2,
         "projectPath": "/OC-P12/projet10.jpg",
         "title": "724 Events",
-        "description": "",
+        "description": "I fixed errors on an event agency's website using tests. I designed a recipe book in order to have a list of test scenarios to carry out in order to confirm that all the expected functionalities are operational.",
         "repository": "https://github.com/christopher-cornet/OC-P10",
         "website": "",
-        "alt": "Projet 10 724 Events"
+        "alt": "Projet 10 724 Events",
+        "technologies": ["React", "SCSS"]
     },
     {
         "id": 3,
         "projectPath": "/OC-P12/projet8.jpg",
         "title": "Kasa",
-        "description": "",
+        "description": "I created a real estate rental web application with React. I used React Router to manage the routes of the different pages. I also took into account the handling of route errors which redirect to the 404 error page.",
         "repository": "https://github.com/christopher-cornet/oc-kasa",
         "website": "",
-        "alt": "Projet 8 Kasa"
+        "alt": "Projet 8 Kasa",
+        "technologies": ["React", "SCSS"]
     },
     {
         "id": 4,
         "projectPath": "/OC-P12/projet6.jpg",
         "title": "Portfolio d'architecte",
-        "description": "",
+        "description": "I created an interior designer portfolio. I used the APIs to create an authentication system, add projects and delete projects. The user can add projects without reloading the page, because the DOM is refreshed.",
         "repository": "https://github.com/christopher-cornet/oc-portfolio-architecte",
         "website": "",
-        "alt": "Projet Portfolio d'architecte"
+        "alt": "Projet Portfolio d'architecte",
+        "technologies": ["HTML", "CSS", "Javascript", "Swagger"]
     },
     {
         "id": 5,
         "projectPath": "/OC-P12/projet5.jpg",
         "title": "Print It",
-        "description": "",
+        "description": "I created a dynamic and fluid carousel with javascript. I used event listeners, bullet points that let the user know which slide they are on. The carousel also includes “infinite scrolling” managed with conditions.",
         "repository": "https://github.com/christopher-cornet/print-it",
         "website": "https://christopher-cornet.github.io/print-it/",
-        "alt": "Projet Print It"
+        "alt": "Projet Print It",
+        "technologies": ["HTML", "CSS", "Javascript"]
     },
     {
         "id": 6,
@@ -51,6 +56,7 @@
         "description": "",
         "repository": "https://github.com/christopher-cornet/ohmyfood",
         "website": "https://christopher-cornet.github.io/ohmyfood/",
-        "alt": "Projet Oh My Food"
+        "alt": "Projet Oh My Food",
+        "technologies": ["HTML", "CSS", "SCSS"]
     }
 ]
