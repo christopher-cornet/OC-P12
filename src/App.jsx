@@ -64,6 +64,7 @@ function App() {
           <h1>Christopher Cornet</h1>
           <h2>Full Stack Developer</h2>
           <p>I love creating and bringing things I have in mind to life with code.</p>
+          <p>I am the developer you need for the projects you want.</p>
         </section>
         <section>
           <img src={profilePicture} alt="Photo de profil de Christopher Cornet" />
@@ -74,7 +75,8 @@ function App() {
         {/* Projects */}
         <div className="projects">
           {projects.map((project) => {
-            return <Card
+            return (
+              <Card
                 key={project.id}
                 image={project.projectPath}
                 title={project.title}
@@ -83,10 +85,12 @@ function App() {
                 alt={project.alt}
                 onImageClick={() => handleImageClick(project)}
               />
-            })}
-            {isModalOpen && (
-              <Modal project={modalProject} closeModal={closeModal} />
-            )}
+            )
+            })
+          }
+          {isModalOpen && (
+            <Modal project={modalProject} closeModal={closeModal} />
+          )}
         </div>
 
         {/* Skills */}
