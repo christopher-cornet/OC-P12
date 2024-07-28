@@ -5,7 +5,7 @@ import { faArrowUpRightFromSquare, faXmark } from "@fortawesome/free-solid-svg-i
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from 'react';
 
-function Modal({ project, closeModal }) {
+function Modal({ project, closeModal, language }) {
     // Click outside the modal (background) close the modal
     const handleBackgroundClick = (event) => {
         if (event.target === event.currentTarget) {
@@ -50,7 +50,13 @@ function Modal({ project, closeModal }) {
                     <FontAwesomeIcon icon={faXmark} style={{color: "#fafaf9"}} />
                 </span>
                 <h2>{project.title}</h2>
-                <p className="modal-description">{project.description}</p>
+                <p className="modal-description">
+                    {language === 'en' ? 
+                        project.descriptionEN
+                        :
+                        project.descriptionFR
+                    }
+                </p>
                 <section className="modal-sub-part">
                     <div className="modal-icons">
                         <a href={project.repository} target="_blank">
@@ -95,7 +101,8 @@ function Modal({ project, closeModal }) {
 
 Modal.propTypes = {
     project: PropTypes.object.isRequired,
-    closeModal: PropTypes.func.isRequired
+    closeModal: PropTypes.func.isRequired,
+    language: PropTypes.string.isRequired
 };
 
 export default Modal;

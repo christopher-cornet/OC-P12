@@ -55,16 +55,47 @@ function App() {
     setModalProject({});
   };
 
+  const [language, setLanguage] = useState('en');
+
+  useEffect(() => {
+    const browserLanguage = navigator.language || navigator.userLanguage;
+    if (browserLanguage.startsWith('fr')) {
+      setLanguage('fr');
+    }
+  }, []);
+
+  const handleLanguageChange = (lang) => {
+    setLanguage(lang);
+  };
+
   return (
     <>
-      <Header />
+      <Header language={language} onLanguageChange={handleLanguageChange} />
 
       <div className="top-part">
         <section>
           <h1>Christopher Cornet</h1>
-          <h2>Full Stack Developer</h2>
-          <p>I love creating and bringing things I have in mind to life with code.</p>
-          <p>I am the developer you need for the projects you want.</p>
+          <h2>
+            {language === 'en' ?
+              "Full Stack Developer"
+              :
+              "Développeur Full Stack"
+            }
+          </h2>
+          <p>
+            {language === 'en' ?
+              "I love creating and bringing things I have in mind to life with code."
+              :
+              "J'aime créer et donner vie aux choses que j'ai en tête avec du code."
+            }
+          </p>
+          <p>
+            {language === 'en' ?
+              "I am the developer you need for the projects you want."
+              :
+              "Je suis le développeur dont vous avez besoin pour les projets que vous souhaitez."
+            }
+          </p>
         </section>
         <section>
           <img src={profilePicture} alt="Photo de profil de Christopher Cornet" />
@@ -89,14 +120,26 @@ function App() {
             })
           }
           {isModalOpen && (
-            <Modal project={modalProject} closeModal={closeModal} />
+            <Modal project={modalProject} closeModal={closeModal} language={language} />
           )}
         </div>
 
         {/* Skills */}
         <section className="skills">
-          <p className="title">Skills</p>
-          <h2>I love working on...</h2>
+          <p className="title">
+            {language === 'en' ? 
+              "Skills"
+              :
+              "Compétences"
+            }
+          </p>
+          <h2>
+            {language === 'en' ?
+              "I love working on..."
+              :
+              "J'adore travailler sur..."
+            }
+          </h2>
           <section className="technologies">
             <div>
               <a href="https://react.dev/" aria-label="React website" target="_blank">
@@ -104,8 +147,17 @@ function App() {
               </a>
               <h3>React</h3>
               <p>
-                I primarily leverage <span>React</span> to design dynamic and
-                interactive user interfaces for my applications.
+                {language === 'en' ? (
+                  <>
+                    I primarily leverage <span>React</span> to design dynamic and
+                    interactive user interfaces for my applications.
+                  </>
+                  ) : (
+                  <>
+                    J&apos;utilise principalement <span>React</span> pour concevoir des
+                    interfaces utilisateur interactives pour mes applications.
+                  </>
+                )}
               </p>
             </div>
             <div>
@@ -114,8 +166,17 @@ function App() {
               </a>
               <h3>Python</h3>
               <p>
-                For backend development in both web and desktop environments,
-                I harness the power of <span>Python</span>.
+                {language === 'en' ? (
+                  <>
+                    For backend development in both web and desktop environments,
+                    I harness the power of <span>Python</span>.
+                  </>
+                  ) : (
+                  <>
+                    Pour le développement backend dans les environnements web et de bureau,
+                    je fais appel à la puissance de <span>Python</span>.
+                  </>
+                )}
               </p>
             </div>
             <div>
@@ -124,8 +185,17 @@ function App() {
               </a>
               <h3>PHP</h3>
               <p>
-                Additionally, I have utilized <span>PHP</span> and <span>mySQL</span> to
-                build robust backends for my websites.
+                {language === 'en' ? (
+                  <>
+                    Additionally, I have utilized <span>PHP</span> and <span>mySQL</span> to
+                    build robust backends for my websites.
+                  </>
+                  ) : (
+                  <>
+                    De plus, j&apos;ai utilisé <span>PHP</span> et <span>mySQL</span> pour
+                    créer des backends robustes pour mes sites web.
+                  </>
+                )}
               </p>
             </div>
           </section>
@@ -133,8 +203,20 @@ function App() {
 
         {/* Education */}
         <section className="education">
-          <p className="title">Education</p>
-          <h2>My apprenticeship</h2>
+          <p className="title">
+            {language === 'en' ? 
+              "Education"
+              :
+              "Formation"
+            }
+          </p>
+          <h2>
+            {language === 'en' ? 
+              "My apprenticeship"
+              :
+              "Mon apprentissage"
+            }
+          </h2>
           <section className="schools">
             <div>
               <a href="https://openclassrooms.com/" target="_blank">
@@ -142,10 +224,21 @@ function App() {
               </a>
               <h3>OpenClassrooms</h3>
               <p>
-                I completed a training program in <span>Front-End</span> development
-                with JavaScript, React, and Redux. During this course, I learned 
-                how to create user interfaces that communicate with the back-end and 
-                manage web projects.
+                {language === 'en' ? (
+                  <>
+                    I completed a training program in <span>Front-End</span> development
+                    with JavaScript, React, and Redux. During this course, I learned 
+                    how to create user interfaces that communicate with the back-end and 
+                    manage web projects.
+                  </>
+                  ) : (
+                  <>
+                    J&apos;ai suivi une formation en développement <span>Front-End</span> avec
+                    JavaScript, React et Redux. Durant cette formation, j&apos;ai appris 
+                    à créer des interfaces utilisateur qui communiquent avec le back-end et 
+                    la gestion de projets web.
+                  </>
+                )}
               </p>
             </div>
             <div>
@@ -154,9 +247,20 @@ function App() {
               </a>
               <h3>The Odin Project</h3>
               <p>
-                I also took courses from The Odin Project to deepen my knowledge
-                of JavaScript and React. I plan to learn <span>Express.js</span> to
-                develop <span>Full Stack</span> applications with JavaScript.
+                {language === 'en' ? (
+                  <>
+                    I also took courses from The Odin Project to deepen my knowledge
+                    of JavaScript and React. I plan to learn <span>Express.js</span> to
+                    develop <span>Full Stack</span> applications with JavaScript.
+                  </>
+                  ) : (
+                  <>
+                    Je me suis également formé avec The Odin Project pour approfondir
+                    mes connaissances de JavaScript et React. J&apos;ai l&apos;intention
+                    d&apos;apprendre <span>Express.js</span> pour développer des
+                    applications <span>Full Stack</span> avec JavaScript.
+                  </>
+                )}
               </p>
             </div>
           </section>
@@ -165,8 +269,20 @@ function App() {
 
       {/* Contact */}
       <footer>
-          <p className="title">Contact me</p>
-          <h2>I will be happy to work with you.</h2>
+          <p className="title">
+            {language === 'en' ?
+              "Contact me"
+              :
+              "Contactez moi"
+            }
+          </p>
+          <h2>
+            {language === 'en' ?
+              "I will be happy to work with you."
+              :
+              "Je serai heureux de travailler avec vous."
+            }
+          </h2>
           <GlowCapture>
             <Glow color='hsl(48, 96%, 53%)'>
             <section className="container_contact-cards">
@@ -174,14 +290,20 @@ function App() {
                 logo={linkedin}
                 alt="Linkedin"
                 name="Christopher Cornet"
-                description="+500 Connections"
+                // description={"+500 Relations"}
+                description={
+                  language === 'en' ? "+500 connections" : "+500 relations"
+                }
                 contactLink="https://www.linkedin.com/in/christopher-cornet/"
               />
               <ContactCard 
                 logo={github}
                 alt="Github"
                 name="@christopher-cornet"
-                description="3 Followers"
+                // description="3 Followers"
+                description={
+                  language === 'en' ? "3 followers" : "3 abonnés"
+                }
                 contactLink="https://github.com/christopher-cornet"
               />
             </section>
