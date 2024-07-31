@@ -25,14 +25,14 @@ function Header({ language, onLanguageChange }) {
                     href="https://github.com/christopher-cornet"
                     aria-label="Redirect to the Github profile"
                     target="_blank">
-                    <FontAwesomeIcon icon={faGithub} style={{color: "#0c0a09"}} />
+                    <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
                     href="https://www.linkedin.com/in/christopher-cornet/"
                     aria-label="Redirect to the LinkedIn profile"
                     target="_blank"
                 >
-                    <FontAwesomeIcon icon={faLinkedin} style={{color: "#0c0a09"}} />
+                    <FontAwesomeIcon icon={faLinkedin} />
                 </a>
 
                 {
@@ -40,26 +40,18 @@ function Header({ language, onLanguageChange }) {
                     <ReactCountryFlag
                         countryCode="US"
                         svg
-                        style={{
-                            height: "30px",
-                            width: "40px",
-                            borderRadius: "6px",
-                            cursor: "pointer"
-                        }}
                         onClick={handleFlagClick}
+                        className="flag"
+                        style={{ height: "30px", width: "40px"}}
                         alt="United States Flag"
                     />
                     :
                     <ReactCountryFlag
                         countryCode="FR"
                         svg
-                        style={{
-                            height: "30px",
-                            width: "40px",
-                            borderRadius: "6px",
-                            cursor: "pointer"
-                        }}
                         onClick={handleFlagClick}
+                        className="flag"
+                        style={{ height: "30px", width: "40px"}}
                         alt="Drapeau de la France"
                     />
                 }

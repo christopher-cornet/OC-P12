@@ -29,10 +29,9 @@ function Card({ image, title, repository, website, alt, onImageClick }) {
 					<FontAwesomeIcon
 						className="card_icon github"
 						icon={faGithub}
-						style={{color: "#c5c8d0"}}
 					/>
 				</a>
-				{website ? (
+				{website && (
 					<a
 						href={website}
 						aria-label="Redirection to the live website of the project"
@@ -41,10 +40,9 @@ function Card({ image, title, repository, website, alt, onImageClick }) {
 						<FontAwesomeIcon
 							className="card_icon arrow"
 							icon={faArrowUpRightFromSquare}
-							style={{ color: "#c5c8d0" }}
 						/>
 					</a>
-				) : null}
+				)}
 			</div>
         </section>
     )

@@ -143,7 +143,7 @@ function App() {
           <section className="technologies">
             <div>
               <a href="https://react.dev/" aria-label="React website" target="_blank">
-                <FontAwesomeIcon className="logo" color="#9fd9fa" icon={faReact} />
+                <FontAwesomeIcon className="logo react" icon={faReact} />
               </a>
               <h3>React</h3>
               <p>
@@ -162,7 +162,7 @@ function App() {
             </div>
             <div>
               <a href="https://www.python.org/" aria-label="Python website" target="_blank">
-                <FontAwesomeIcon className="logo" color="#facc15" icon={faPython} />
+                <FontAwesomeIcon className="logo python" icon={faPython} />
               </a>
               <h3>Python</h3>
               <p>
@@ -181,7 +181,7 @@ function App() {
             </div>
             <div>
               <a href="https://www.php.net/" aria-label="PHP website" target="_blank">
-                <FontAwesomeIcon className="logo" color="#8473c4" icon={faPhp} />
+                <FontAwesomeIcon className="logo php" icon={faPhp} />
               </a>
               <h3>PHP</h3>
               <p>
@@ -290,7 +290,6 @@ function App() {
                 logo={linkedin}
                 alt="Linkedin"
                 name="Christopher Cornet"
-                // description={"+500 Relations"}
                 description={
                   language === 'en' ? "+500 connections" : "+500 relations"
                 }
@@ -300,7 +299,6 @@ function App() {
                 logo={github}
                 alt="Github"
                 name="@christopher-cornet"
-                // description="3 Followers"
                 description={
                   language === 'en' ? "3 followers" : "3 abonnés"
                 }

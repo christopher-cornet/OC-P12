@@ -47,7 +47,7 @@ function Modal({ project, closeModal, language }) {
         <section className="modal" onClick={handleBackgroundClick}>
             <div className="modal-content">
                 <span className="close" onClick={closeModal}>
-                    <FontAwesomeIcon icon={faXmark} style={{color: "#fafaf9"}} />
+                    <FontAwesomeIcon icon={faXmark} />
                 </span>
                 <h2>{project.title}</h2>
                 <p className="modal-description">
@@ -63,7 +63,6 @@ function Modal({ project, closeModal, language }) {
                             <FontAwesomeIcon
                                 className="modal_icon github"
                                 icon={faGithub}
-                                style={{ color: "#c5c8d0" }}
                             />
                         </a>
                         {project.website && (
@@ -71,27 +70,20 @@ function Modal({ project, closeModal, language }) {
                                 <FontAwesomeIcon
                                     className="modal_icon arrow"
                                     icon={faArrowUpRightFromSquare}
-                                    style={{ color: "#c5c8d0" }}
                                 />
                             </a>
                         )}
                     </div>
                     <div className="modal-technologies">
-                        {project.technologies.map((technology) => {
-                            {console.log(colors[technology.technology])}
-                            return (
+                        {project.technologies.map((technology) => (
                                 <p
                                     key={technology}
-                                    style={{
-                                        display: "inline",
-                                        paddingLeft: "15px",
-                                        color: colors[technology]
-                                    }}
+                                    style={{ color: colors[technology] }}
                                 >
                                     {technology}
                                 </p>
                             )
-                        })}
+                        )}
                     </div>
                 </section>
             </div>

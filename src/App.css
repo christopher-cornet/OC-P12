@@ -101,6 +101,18 @@
     background-color: #101010;
     font-weight: bold;
   }
+
+  .react {
+    color:#9fd9fa;
+  }
+
+  .python {
+    color:#facc15;
+  }
+
+  .php {
+    color:#8473c4;
+  }
 }
 
 .schools {
