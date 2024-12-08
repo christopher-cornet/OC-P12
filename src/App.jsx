@@ -91,9 +91,9 @@ function App() {
           </p>
           <p>
             {language === 'en' ?
-              "I am the developer you need for the projects you want."
+              "I am the developer you need for the projects you want to carry out."
               :
-              "Je suis le développeur dont vous avez besoin pour les projets que vous souhaitez."
+              "Je suis le développeur dont vous avez besoin pour les projets que vous souhaitez réaliser."
             }
           </p>
         </section>
@@ -300,7 +300,7 @@ function App() {
                 alt="Github"
                 name="@christopher-cornet"
                 description={
-                  language === 'en' ? "3 followers" : "3 abonnés"
+                  language === 'en' ? "6 followers" : "6 abonnés"
                 }
                 contactLink="https://github.com/christopher-cornet"
               />
